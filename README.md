@@ -18,6 +18,8 @@ nodejs auth middleware
 >2.  实例化AuthManager对象，注册登录注册地址
 >3.  使用中间件验证需要登录的地址
 
+###### Example(具体代码见example)
+
 ```
 //声明User对象
 function User(){
