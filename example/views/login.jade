@@ -1,0 +1,15 @@
+//
+   Created by think on 2014/9/1.
+extends layout
+block content
+    h1 登录例子
+    form(action="",method="post")
+        label 用户名
+        input(type="text", name="username",placeholder="用户名", value="#{submit.username||''}")
+        label 密码
+        input(type="password", name="pwd", placeholder="密码", value="#{submit.pwd||''}")
+        input(type="submit", value="sign in")
+    -if(error)
+        div(style="color:red;") #{error}
+    -if(success)
+        div(style="color:green") #{success}

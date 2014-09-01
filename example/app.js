@@ -29,9 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 var User = require('./model/user');
-config = {
-    userModel:User
-}
+config = {}
 var AuthManager = require('../lib').AuthManager;
 var authManager = new AuthManager(config);
 

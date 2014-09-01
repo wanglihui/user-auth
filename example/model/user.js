@@ -9,7 +9,7 @@ function User(){
 
 User.prototype = new UserMin();
 
-User.prototype.loadUser = function(id, callback) {
+User.loadUser = function(id, callback) {
     if (id) {
         var user = new User();
         user.id = id;
@@ -22,7 +22,7 @@ User.prototype.loadUser = function(id, callback) {
     }
 }
 
-User.prototype.authentication = function(username, pwd, callback) {
+User.authentication = function(username, pwd, callback) {
     if (username == 'test' && pwd == 'test') {
         var user = new User();
         user.username = 'test';
